@@ -32,7 +32,7 @@ export const updateTask = catchAsyncErrors(async (req, res, next) => {
       runValidators: true,
     }
   );
-  console.log('this is updated task', updateTask)
+  // console.log('this is updated task', updateTask)
   return res
     .status(200)
     .json({ success: true, message: "Task Updated", Data: updateTask });
